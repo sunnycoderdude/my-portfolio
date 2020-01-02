@@ -16,8 +16,38 @@ body {
     background: url("../../images/placeholder.png")
 }
 
-#main-body-header {
+.navbar {
+    padding: 0px 0px 0px 0px;
+    background: white;
+}
+
+.navbar-brand {
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-link {
+    color: gray;    
+}
+
+.container {
+    padding-left: 0px;
+}
+
+.name-header {
     font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: white;
+    background: #4aaaa5;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+}
+
+.main-body-header {
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     width: 200px;
     height: 30px;
     padding: 10px;
@@ -31,24 +61,29 @@ hr {
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     height: 50px;
-    padding: 10px;
+    padding: 5px 5px 5px 5px;
     background: #666666;
     border-top: 8px solid #4aaaa5;
     text-align: center;
     clear: both;
+    color: white;
     height: 50px;
     margin-top: -50px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
 
-#header-elements {
+.header-elements {
     position: relative;
     margin-left: 200px;
     margin-right: 200px;
 }
 
-#my-name {
+.my-name {
     position: absolute;
     width: 70px;
     left: 0px;
@@ -61,7 +96,7 @@ hr {
     background: #4aaaa5;
 }
 
-#about {
+.about {
     position: absolute;
     width: 70px;
     right: 200px;
@@ -71,7 +106,7 @@ hr {
     color: #777777;
 }
 
-#portfolio {
+.portfolio {
     position: absolute;
     width: 70px;
     right: 130px;
@@ -81,7 +116,7 @@ hr {
     color: #777777;
 }
 
-#contact {
+.contact {
     position: absolute;
     right: 60px;
     height: 40px;
@@ -90,23 +125,17 @@ hr {
     color: #777777;
 }
 
-#main-content {
-    min-height: calc(100vh - 180px);
-    display: block;
-    clear: both;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    width: 960px;
-    padding: 10px;
+.main-content {
     color: #777777;
+    margin-top: 10px;
+    padding: 10px 15px 15px 10px;
+    /* min-height: calc(100vh - 50px); */
     background: #ffffff;
     border-color: #dddddd;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#portfolio-content {
+.portfolio-content {
     min-height: calc(100vh - 180px);
     display: block;
     clear: both;
@@ -123,7 +152,7 @@ hr {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-#its-me {
+.its-me {
     width: 203px;
     height: 232px;
     float: left;
@@ -215,4 +244,27 @@ hr {
     background-color: #4aaaa5;
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .body {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .containder .container-sm .main-content{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .navbar .navbar-expand .navbar-fixed-top {
+        width: 100%;
+        padding: 0px;
+        display: block;
+    }
+    
+    .container {
+        width: 100%;
+    }
 }

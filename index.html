@@ -7,30 +7,60 @@
     <title>My Portfolio</title>
 
     <!-- CSS Reset -->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../my-portfolio/assets/css/reset.css">
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../my-portfolio/assets/css/style.css">
 
 </head>
 <body>
    
     <!-- Start Nav -->
-    <div class="container">
-        <h1><a href="#">Satinder Singh</a></h1>
-        <ul class="nav navbar-default navbar-nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+    
+    <!-- Navbar -->
+    <div class="navbar navbar-expand navbar-fixed-top">
+        <div class="container">
+
+        <nav class="navbar-brand name-header">Satinder Singh</nav>
+
+            <div class="ml-auto">
+                <ul class="nav navbar-nav flex-md-row list-inline center-block text-center">
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Portfolio</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-    <!-- End Nav -->
+    <!-- End navbar -->   
+
+    <div class="container-sm main-content">
+
+            <header class="main-body-header">About Me</header>
+
+            <hr>
+            <div class="col-md-12">
+
+            <img class="img-fluid float-left" src="images/headshot.JPG" alt="me">
+        
+            <p>Welcome to my homepage! My name is Satinder "Sunny" Singh and I am an aspiring programmer and accomplished financial analyst. My career has spanned a wide variety of roles within global finance. </p>
+                    
+            <p>Following my undergraduate studies at NYU, I spent my analyst years at Deutsche Bank and TPG focused on distressed real estate debt. I made the switch over to the public markets as an associate within the long/short equities group at Citadel. I am currently on an extended garden leave and will be joining Millennium as an analyst covering real estate securities.</p>
+            
+            <p>I have always had a passion for programming having taken a variety of classes at NYU. While I focused on building my investing career, I kept my programming skills sharp by writing scripts in VBA. I believe the marriage between data science and finance will only continue to strengthen. </p>
+            
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>® Copyright</p>
+    </div>
+
 
 </body>
 </html>
