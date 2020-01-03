@@ -12,37 +12,6 @@ body {
 
 /* Navbar Styling */
 
-.navbar {
-    padding: 0px 0px 0px 0px;
-    background: white;
-}
-
-.navbar-brand {
-    margin-left: 0px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-}
-
-.nav-link {
-    color: gray;    
-}
-
-.container {
-    padding-left: 0px;
-}
-
-/* Main Page Styling */
-
-.main-content {
-    color: #777777;
-    margin-top: 10px;
-    padding: 10px 15px 15px 10px;
-    /* min-height: calc(100vh - 50px); */
-    background: #ffffff;
-    border-color: #dddddd;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
 .name-header {
     font-weight: bold;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -52,6 +21,23 @@ body {
     height: 50px;
     padding: 10px;
 }
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+/* Main Page Styling */
+
+.main-content {
+    color: #777777;
+    margin-top: 40px;
+    padding: 10px 15px 15px 10px;
+    /* min-height: calc(100vh - 50px); */
+    background: #ffffff;
+    border-color: #dddddd;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 
 .main-body-header {
     font-weight: bold;
@@ -115,7 +101,6 @@ hr {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-
 .portfolio {
     position: absolute;
     width: 70px;
@@ -134,8 +119,6 @@ hr {
     text-align: center;
     color: #777777;
 }
-
-
 
 .portfolio-content {
     /* min-height: calc(100vh - 180px); */
@@ -232,57 +215,7 @@ hr {
 /* Media Query for Small Sizes */
 
 @media screen and (max-width: 768px) {
-
-    #top {
-        padding-top: 100px;
-        align-content: center;
-        width: 100%;
-        clear: both;
-        float: left;
+    .inline {
+        display: inline-block;
     }
-
-    .nav {
-        width: 100%;
-    }
-
-    .nav-link {
-        align-content: center;
-        width: 100%;
-        clear: both;
-        float: left;
-    }
-
-    .body {
-        width: 100%;
-        margin: 0px 0px 0px 0px;
-    }
-
-    .container .container-sm .main-content{
-        width: 100%;
-        margin: 0px 0px 0px 0px;
-    }
-
-    .navbar-brand .name-header {
-        align-content: center;
-        text-align: center;
-        width: 768px;
-    }
-
-    .navbar .navbar-expand .navbar-fixed-top {
-        width: 100%;
-        padding: 0px;
-        display: block;
-        float: left;
-    }
-    
-    .container {
-        width: 100%;
-    }
-
-    .ul {
-        clear: both;
-        display: block;
-    }
-
-    
 }
